@@ -1,0 +1,25 @@
+{
+  "version": "0.0.1",
+  "description": "",
+  "author": "",
+  "private": true,
+  "license": "UNLICENSED",
+  "tasks": {
+      "start": "deno run --allow-read --allow-env --allow-net ./src/main.ts",
+      "start:dev": "deno run --watch --allow-read --allow-env --allow-net ./src/main.ts",
+      "check": "deno check ./src/main.ts",
+      "compile": "deno compile --allow-read --allow-env --allow-net --output ./dist ./src/main.ts",
+      "compile:lambda": "deno compile --allow-read --allow-env --allow-net --output ./dist ./src/lambda.ts"
+  },
+  "nodeModulesDir": "none",
+  "imports": {
+    "@hono/hono": "jsr:@hono/hono@^4.6.9",
+    "@nestjs/common": "npm:@nestjs/common@^10.4.7",
+    "@nestjs/core": "npm:@nestjs/core@^10.4.7",
+    "@uki00a/nestjs-platform-hono": "jsr:@uki00a/nestjs-platform-hono@^0.2.0"
+  },
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true
+  }
+}

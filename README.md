@@ -4,8 +4,7 @@
 
 - [nestjs](https://nestjs.com/)
 - [Hono](https://hono.dev/)
-- [@kiyasov/platform-hono (nestjs hono adapter)](https://github.com/kiyasov/platform-hono)
-- [esbuild](https://esbuild.github.io/)
+- [@uki00a/nestjs-platform-hono (nestjs hono adapter)](https://github.com/uki00a/nestjs-platform-deno)
 
 ## Server usage
 
