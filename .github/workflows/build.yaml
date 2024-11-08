@@ -20,6 +20,12 @@ jobs:
       - name: Install Deno
         uses: denoland/setup-deno@v2
 
+      - name: Check lint
+        run: deno lint
+
+      - name: Check format
+        run: deno fmt --check
+
       - name: Install dependencies
         run: deno install
 

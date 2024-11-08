@@ -5,11 +5,11 @@
   "private": true,
   "license": "UNLICENSED",
   "tasks": {
-      "start": "deno run --allow-read --allow-env --allow-net ./src/main.ts",
-      "start:dev": "deno run --watch --allow-read --allow-env --allow-net ./src/main.ts",
-      "check": "deno check ./src/main.ts",
-      "compile": "deno compile --allow-read --allow-env --allow-net --output ./dist ./src/main.ts",
-      "compile:lambda": "deno compile --allow-read --allow-env --allow-net --output ./dist ./src/lambda.ts"
+    "start": "deno run --allow-read --allow-env --allow-net ./src/main.ts",
+    "start:dev": "deno run --watch --allow-read --allow-env --allow-net ./src/main.ts",
+    "check": "deno check ./src/main.ts",
+    "compile": "deno compile --allow-read --allow-env --allow-net --output ./dist/app ./src/main.ts",
+    "compile:lambda": "deno compile --allow-read --allow-env --allow-net --output ./dist/lambda ./src/lambda.ts"
   },
   "nodeModulesDir": "none",
   "imports": {

@@ -1,5 +1,5 @@
 import { HonoAdapter } from "@uki00a/nestjs-platform-hono";
-import { bootstrap } from './bootstrap.ts';
+import { bootstrap } from "./bootstrap.ts";
 import { Hono } from "@hono/hono";
 
 async function boot() {

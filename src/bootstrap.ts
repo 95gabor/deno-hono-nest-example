@@ -1,11 +1,11 @@
 import {
   AbstractHttpAdapter,
-  NestFactory,
   HttpAdapterHost,
-} from '@nestjs/core';
-import { AppModule } from './app.module.ts';
-import { AllExceptionsFilter } from './all-exception.filter.ts';
-import { INestApplication } from '@nestjs/common';
+  NestFactory,
+} from "@nestjs/core";
+import { AppModule } from "./app.module.ts";
+import { AllExceptionsFilter } from "./all-exception.filter.ts";
+import { INestApplication } from "@nestjs/common";
 
 export async function bootstrap(
   adapter: AbstractHttpAdapter,

@@ -1,5 +1,5 @@
-import { BadRequestException, Controller, Get } from '@nestjs/common';
-import { AppService } from './app.service.ts';
+import { BadRequestException, Controller, Get } from "@nestjs/common";
+import { AppService } from "./app.service.ts";
 
 @Controller()
 export class AppController {
@@ -10,8 +10,8 @@ export class AppController {
     return this.appService.getHello();
   }
 
-  @Get('error')
+  @Get("error")
   getError(): string {
-    throw new BadRequestException('bad request');
+    throw new BadRequestException("bad request");
   }
 }

@@ -1,0 +1,8 @@
+services:
+  app:
+    build:
+      context: .
+      target: build
+    command: deno task start:dev
+    volumes:
+      - ./src:/opt/app/src
