@@ -9,7 +9,8 @@
     "start:dev": "deno run --watch --allow-read --allow-env --allow-net ./src/main.ts",
     "check": "deno check ./src/main.ts",
     "compile": "deno compile --allow-read --allow-env --allow-net --output ./dist/app ./src/main.ts",
-    "compile:lambda": "deno compile --allow-read --allow-env --allow-net --output ./dist/lambda ./src/lambda.ts"
+    "compile:lambda": "deno compile --allow-read --allow-env --allow-net --output ./dist/lambda ./src/lambda.ts",
+    "test:lambda": "deno run --allow-read --allow-env --allow-net ./lambda-tester.ts"
   },
   "nodeModulesDir": "none",
   "imports": {
