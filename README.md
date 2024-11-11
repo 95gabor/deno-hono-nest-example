@@ -1,4 +1,4 @@
-# Platform Hono sample
+# Deno nestjs Hono sample
 
 ## Tools
 
@@ -9,15 +9,13 @@
 ## Server usage
 
 ```bash
-npm install
-npm run build
-npm start
+deno install
+deno task start # or compile
 ```
 
 ## Serverless usage
 
 ```bash
-npm install
-npm run build:lambda
-npm run test:lambda
+deno install
+deno compile:lambda
 ```
