@@ -6,6 +6,8 @@ async function boot() {
   const hono = new Hono();
   const adapter = HonoAdapter.create(hono);
   const app = await bootstrap(adapter);
-  app.listen(3000);
+
+  app.listen(8080);
 }
+
 boot();

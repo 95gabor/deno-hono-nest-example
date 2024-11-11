@@ -12,10 +12,3 @@
 deno install
 deno task start # or compile
 ```
-
-## Serverless usage
-
-```bash
-deno install
-deno compile:lambda
-```

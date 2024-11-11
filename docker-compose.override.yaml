@@ -2,7 +2,7 @@ services:
   app:
     build:
       context: .
-      target: build
+      target: deps
     command: deno task start:dev
     volumes:
       - ./src:/opt/app/src
