@@ -1,4 +1,4 @@
-name: Build
+name: Build and Publish
 
 on:
   workflow_dispatch:
@@ -10,7 +10,7 @@ on:
       - main
 
 jobs:
-  build:
+  check:
     runs-on: ubuntu-24.04
 
     steps:
@@ -34,5 +34,18 @@ jobs:
       - name: Type checking
         run: deno task check
 
-      - name: Cache dependencies
-        run: deno task compile
+  build:
+    runs-on: ubuntu-24.04
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Build Docker image
+        run: |
+          docker build \
+            --platform linux/amd64 \
+            --provenance false \
+            --target production \
+            -t deno-hono-nest-example:latest \
+            .
