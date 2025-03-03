@@ -13,4 +13,6 @@ repos:
     rev: 0.1.0
     hooks:
       - id: deno-lint
+        args:
+          - "-"
       - id: deno-fmt
