@@ -6,8 +6,8 @@ run = [
     "--allow-read",
     "--allow-env",
     "--allow-net",
-    "--allow-run"
-    "src/main.ts"
+    "--allow-run",
+    "src/main.ts",
 ]
 
 hidden = [".deno"]
