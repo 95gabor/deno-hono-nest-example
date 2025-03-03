@@ -1,62 +1,35 @@
+*
 
-/public
+# Readme
+!README.md
 
-# compiled output
-/dist
-/node_modules
-/build
+# Git
+!.gitignore
 
-# Logs
-logs
-*.log
-npm-debug.log*
-pnpm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-lerna-debug.log*
+# pre-commit
+!.pre-commit-config.yaml
 
-# OS
-.DS_Store
+# GitHub
+!.github
+!.github/**.yaml
 
-# Tests
-/coverage
-/.nyc_output
+# Docker
+!.dockerignore
+!Dockerfile
+!docker-compose*.yaml
 
-# IDEs and editors
-/.idea
-.project
-.classpath
-.c9/
-*.launch
-.settings/
-*.sublime-workspace
+# Replit
+!.replit
+!replit.nix
 
-# IDE - VSCode
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
+# Deno
+!deno.json
+!deno.lock
 
-# dotenv environment variable files
-.env
-.env.development.local
-.env.test.local
-.env.production.local
-.env.local
+# events
+!events
+!events/*.json
 
-# temp directory
-.temp
-.tmp
-
-# Runtime data
-pids
-*.pid
-*.seed
-*.pid.lock
-
-# Diagnostic reports (https://nodejs.org/api/report.html)
-report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
-
-metadata.json
-stats.html
+# source
+!src
+!src/

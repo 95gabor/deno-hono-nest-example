@@ -1,5 +1,6 @@
 *
 
-!src
 !deno.json
 !deno.lock
+
+!src
