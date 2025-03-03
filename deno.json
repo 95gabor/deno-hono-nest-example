@@ -12,10 +12,10 @@
   },
   "nodeModulesDir": "none",
   "imports": {
-    "@hono/hono": "jsr:@hono/hono@^4.6.9",
-    "@nestjs/common": "npm:@nestjs/common@^10.4.7",
-    "@nestjs/core": "npm:@nestjs/core@^10.4.7",
-    "@uki00a/nestjs-platform-hono": "jsr:@uki00a/nestjs-platform-hono@^0.2.0"
+    "@hono/hono": "jsr:@hono/hono@^4.7.2",
+    "@nestjs/common": "npm:@nestjs/common@^10.4.15",
+    "@nestjs/core": "npm:@nestjs/core@^10.4.15",
+    "@uki00a/nestjs-platform-hono": "jsr:@uki00a/nestjs-platform-hono@^0.4.0"
   },
   "compilerOptions": {
     "experimentalDecorators": true,
