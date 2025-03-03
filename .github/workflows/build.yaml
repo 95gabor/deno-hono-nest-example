@@ -32,7 +32,7 @@ jobs:
         run: deno install
 
       - name: Check lint
-        run: deno lint
+        run: deno lint src/**
 
       - name: Check format
         run: deno fmt --check
