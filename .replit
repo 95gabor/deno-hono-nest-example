@@ -2,7 +2,7 @@ run = [
     "deno",
     "run",
     "--lock=deno.lock",
-    "--lock-write",
+    "--frozen",
     "--allow-read",
     "--allow-env",
     "--allow-net",
@@ -25,7 +25,7 @@ lint = true
 DENO_DIR = "/home/runner/${REPL_SLUG}/.deno"
 
 [nix]
-channel = "stable-24_05"
+channel = "stable-24_11"
 
 [deployment]
 run = [
@@ -35,7 +35,7 @@ run = [
     "--allow-read",
     "--allow-env",
     "--allow-net",
-    "src/main.ts"
+    "src/main.ts",
 ]
 deploymentTarget = "cloudrun"
 ignorePorts = false
