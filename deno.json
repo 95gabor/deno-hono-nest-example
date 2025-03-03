@@ -5,8 +5,8 @@
   "private": true,
   "license": "UNLICENSED",
   "tasks": {
-    "start": "deno run --allow-read --allow-env --allow-net ./src/main.ts",
-    "start:dev": "deno run --watch --allow-read --allow-env --allow-net ./src/main.ts",
+    "start": "deno run --allow-read --allow-env --allow-net --allow-run ./src/main.ts",
+    "start:dev": "deno run --watch --allow-read --allow-env --allow-net --allow-run ./src/main.ts",
     "check": "deno check ./src/main.ts",
     "compile": "deno compile --allow-read --allow-env --allow-net --output ./dist/app ./src/main.ts"
   },

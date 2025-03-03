@@ -35,6 +35,7 @@ run = [
     "--allow-read",
     "--allow-env",
     "--allow-net",
+    "--allow-run",
     "src/main.ts",
 ]
 deploymentTarget = "cloudrun"
